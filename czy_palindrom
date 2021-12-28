@@ -1,0 +1,12 @@
+word = list(input('podaj slowo: '))
+rev= []
+def czy_palindrom(word):
+    i = -1
+    for elem in word:
+        rev.append(word[i])
+        i-=1
+    if word == rev:
+        print('slowo', ''.join(word), 'jest palindromem')
+    else:
+        print('slowo', ''.join(word), 'nie jest palindromem')
+czy_palindrom(word)
